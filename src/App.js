@@ -108,6 +108,15 @@ class App extends Component {
         console.log(this.state.cats);
         };
       
-
+        render() {
+            return (
+                <div>
+                    <Navbar score={this.state.score} topScore={this.state.topScore} gameActive={this.state.gameActive} result={this.state.result}></Navbar>
+                    <GameGrid chars={this.state.chars} clickChar={this.clickChar}></GameGrid>
+                    <Footer></Footer>
+                </div>
+            );
+        }
+    }
 
 export default App;
