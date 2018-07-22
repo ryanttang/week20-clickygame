@@ -84,9 +84,9 @@ class App extends Component {
     });
   }
 
-  clickChars = event => {
+  clickChar = event => {
     
-    let charIndex = this.findCharsIndex(event.target.id);
+    let charIndex = this.findCharIndex(event.target.id);
     this.setGameActive(true);
 
     if (this.state.chars[charIndex].clicked === true) {
