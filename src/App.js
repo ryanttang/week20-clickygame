@@ -91,14 +91,14 @@ class App extends Component {
 
     if (this.state.chars[charIndex].clicked === true) {
       this.setState({
-        result: "You guessed Incorrectly!"
+        result: "You Guessed WRONG!"
       });
       this.endGame();
     }
     else {
       this.increaseScore();
       this.setState({
-        result: String("You guessed Correctly!")
+        result: String("You Guessed Right!!")
       });
       this.setCharClicked(charIndex, true);
       console.log(this.state);
